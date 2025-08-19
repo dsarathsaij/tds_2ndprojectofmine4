@@ -213,3 +213,8 @@ async def analyze_data(files: List[UploadFile] = File(...)):
 @app.get("/")
 def read_root():
     return {"message": "Data Analyst Agent API is active."}
+
+import uvicorn
+if __name__ == "__main__":
+     import uvicorn
+     uvicorn.run(app, host="0.0.0.0", port=8000)
