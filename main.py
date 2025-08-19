@@ -21,7 +21,7 @@ logging.basicConfig(level=logging.INFO)
 # os.environ["OPENAI_API_KEY"] = "sk-YourSecretKeyGoesHere"
 client = OpenAI(
     # The key is read from the environment variable you set on Render
-    api_key=os.environ.get("OPENAI_API_KEY"), 
+    api_key= "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", 
 
     # This tells the client to send requests to AIPipe instead of OpenAI
     base_url="https://aipipe.org/openai/v1" # <-- IMPORTANT: Replace with your actual AIPipe URL!
